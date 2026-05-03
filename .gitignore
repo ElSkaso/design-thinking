@@ -1,0 +1,21 @@
+.DS_Store
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# TypeScript incremental state
+*.tsbuildinfo
+
+# Logs and caches
+*.log
+.cache/
+.vite/
