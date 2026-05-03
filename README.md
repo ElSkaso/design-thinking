@@ -1,103 +1,114 @@
-# Design Thinking Case Study Pipeline
+# Design Thinking Pipeline
 
-This repository shows how a rough product idea can be turned into a clear UX case study and a small working prototype.
+This repository contains a reusable pipeline for turning a plain problem description into a structured UX case study and, optionally, a working frontend prototype.
 
-The example project in this repository is **Curry Cruiser**, a mobile ordering concept for a Thai curry food truck.
+It is meant to answer a simple question:
 
-## Why This Exists
+> How far can we get from only a problem description if we use a clear design-thinking process and specialized agents for research, synthesis, and artifact generation?
 
-Many product ideas start as a short sentence:
+## My Contribution
 
-> "Make an app for ordering food from a food truck."
+The main contribution of this project is the pipeline itself.
 
-That is not enough to design a useful product. Before building screens, the idea needs to be understood:
+I defined a staged process that starts with almost nothing but a product problem and guides the work through research, empathy artifacts, problem definition, ideation, case study assembly, and optional app generation.
 
-- Who is it for?
-- What problem does it solve?
-- What evidence supports the direction?
-- What assumptions are still untested?
-- What should the first prototype include?
-- How does each design decision connect back to user needs?
+The important ideas behind this project are:
 
-This repository documents that process step by step.
+- a design-thinking pipeline can start from a short problem description
+- research can be supported by dedicated research agents
+- UX artifacts can be generated in a repeatable, reviewable structure
+- every stage should produce a concrete output that becomes input for the next stage
+- assumptions, evidence, and open questions should be kept separate
+- the final result should be readable by humans, not just useful to software tools
 
-## Methodology
+In other words, this repository is not only a UX exercise. It is an attempt to make a repeatable system for moving from problem framing to product direction.
 
-This pipeline was created using the **Interpreted Context Methodology**:
+## Methodology Basis
 
-[https://github.com/RinDig/Interpreted-Context-Methdology](https://github.com/RinDig/Interpreted-Context-Methdology)
+This pipeline is based on two influences.
 
-In simple terms, the methodology treats context as something that should be built deliberately. Each stage produces a concrete artifact, and each artifact becomes input for the next stage. This makes the work easier to review, refine, and explain.
+First, it uses the general design-thinking and sprint logic popularized by Google and Google Ventures: understand the problem, define the challenge, explore solutions, prototype, and validate with users.
 
-## What Is Inside
+Google's own Design Sprint history describes the sprint as a way to develop a hypothesis and test it quickly through designing, prototyping, and testing ideas with real customers:
 
-The repository contains two things:
+[Google Design: 5-Day UX Design Sprint](https://design.google/library/design-sprints/)
 
-1. A reusable staged process for developing UX case studies.
-2. A complete example project called **Curry Cruiser**.
+Second, this repository was created using the **Interpreted Context Methodology**:
 
-Curry Cruiser explores a digital ordering flow for a Thai curry food truck. Customers can choose a curry, customize it with predefined options, add one or more dishes to a cart, confirm the full order, and receive an order number.
+[Interpreted Context Methodology](https://github.com/RinDig/Interpreted-Context-Methdology)
 
-The project focuses on reducing friction for both:
+The Interpreted Context Methodology treats context as something that should be built deliberately. Each stage adds structure, and every output becomes useful context for the next stage.
 
-- customers ordering during a short lunch break
-- food truck operators who need clear, standardized order details
+## What This Pipeline Produces
+
+Starting from a rough product problem, the pipeline can produce:
+
+- a project brief
+- research questions
+- evidence and assumption logs
+- research synthesis
+- interview plans
+- personas
+- user stories
+- journey maps
+- empathy maps
+- problem statements
+- user needs
+- hypotheses
+- value propositions
+- ideation directions
+- feature priorities
+- wireframe requirements
+- a portfolio-style UX case study
+- an optional React prototype
+
+The goal is not to replace human judgment. The goal is to make the process visible, structured, and easier to critique.
 
 ## The 7 Stages
 
-| Stage | What it means in plain language | Curry Cruiser output |
-|-------|---------------------------------|----------------------|
-| 01. Problem intake | Turn the rough idea into a clear project brief. | `stages/01-problem-intake/output/curry-cruiser-project-brief.md` |
-| 02. Research and validation | Gather evidence, assumptions, risks, and research questions. | `stages/02-research-and-validation/output/curry-cruiser-research-dossier.md` |
-| 03. Empathize artifacts | Describe users, journeys, needs, pains, and service context. | `stages/03-empathize-artifacts/output/curry-cruiser-empathize-artifacts.md` |
-| 04. Define artifacts | Define the UX problem, hypotheses, and value proposition. | `stages/04-define-artifacts/output/curry-cruiser-definition-brief.md` |
-| 05. Ideation and wireframes | Explore solution directions and decide what the prototype needs. | `stages/05-ideation-and-wireframes/output/curry-cruiser-ideation-wireframes.md` |
-| 06. Case study assembly | Combine the work into a readable portfolio-style case study. | `stages/06-case-study-assembly/output/curry-cruiser-ux-case-study.md` |
-| 07. App build | Build a small frontend prototype from the design work. | `stages/07-react-app-build/output/curry-cruiser-app/` |
+| Stage | Plain-language purpose | Output |
+|-------|------------------------|--------|
+| 01. Problem intake | Turn a rough idea into a clear project brief. | `stages/01-problem-intake/output/` |
+| 02. Research and validation | Gather evidence, assumptions, risks, and research questions. | `stages/02-research-and-validation/output/` |
+| 03. Empathize artifacts | Describe users, journeys, needs, pains, and service context. | `stages/03-empathize-artifacts/output/` |
+| 04. Define artifacts | Define the UX problem, hypotheses, and value proposition. | `stages/04-define-artifacts/output/` |
+| 05. Ideation and wireframes | Explore solution directions and define prototype requirements. | `stages/05-ideation-and-wireframes/output/` |
+| 06. Case study assembly | Combine the work into a readable UX case study. | `stages/06-case-study-assembly/output/` |
+| 07. App build | Optionally build a frontend prototype from the design work. | `stages/07-react-app-build/output/` |
 
-## Best Place To Start
+Each stage has a `CONTEXT.md` file that explains what the stage does and which inputs it should use.
 
-If you only read one file, start here:
+## How The Pipeline Works
 
-`stages/06-case-study-assembly/output/curry-cruiser-ux-case-study.md`
+The pipeline creates a reasoning chain:
 
-That file summarizes the full Curry Cruiser project and links the design decisions back to the research and earlier artifacts.
-
-## Curry Cruiser In One Minute
-
-Curry Cruiser is a frontend-only prototype for ordering Thai curry from a food truck.
-
-The intended customer flow:
-
-1. Choose a curry.
-2. Customize the dish with predefined options.
-3. Add the dish to the cart.
-4. Add another dish or go to the cart.
-5. Review all dishes.
-6. Confirm the full order.
-7. Receive an order number and order state.
-
-The prototype does not include payment, accounts, backend order submission, or real inventory management. Those are intentionally outside the current scope.
-
-## Run The Prototype
-
-The Curry Cruiser app is a React/Vite prototype.
-
-From the repository root:
-
-```bash
-cd stages/07-react-app-build/output/curry-cruiser-app
-npm install
-npm run dev
+```text
+problem description
+-> project brief
+-> research and assumptions
+-> user understanding
+-> problem definition
+-> solution direction
+-> case study
+-> optional prototype
 ```
 
-Then open the local URL shown in the terminal.
+This structure makes it easier to see why a design decision exists.
 
-To create a production build:
+For example, a prototype requirement should not appear out of nowhere. It should connect back to a user need, a research signal, a hypothesis, or a clearly marked assumption.
 
-```bash
-npm run build
-```
+## Why Agents Are Used
+
+Agents are useful in this project because different stages need different kinds of work.
+
+For example:
+
+- a research agent can gather and summarize external evidence
+- an empathy-focused agent can turn evidence into personas and journeys
+- a definition-focused agent can produce hypotheses and problem statements
+- a frontend-focused agent can turn prototype requirements into an app
+
+The pipeline is designed so that agent output is not treated as magic. It is saved as artifacts, reviewed stage by stage, and carried forward as explicit context.
 
 ## Repository Structure
 
@@ -105,7 +116,7 @@ npm run build
 design-thinking/
 ├── setup/                    # Starting questionnaire
 ├── shared/                   # Shared standards and project defaults
-├── skills/                   # Method and frontend guidance used by the workspace
+├── skills/                   # Method and frontend guidance
 └── stages/
     ├── 01-problem-intake/
     ├── 02-research-and-validation/
@@ -116,36 +127,27 @@ design-thinking/
     └── 07-react-app-build/
 ```
 
-Each stage has:
+## Who This Is For
 
-- a `CONTEXT.md` file explaining what that stage does
-- an `output/` folder containing the generated project artifact
+This repository may be useful for:
 
-## What Makes This Different
+- UX designers who want a repeatable case-study workflow
+- product people who want clearer problem framing
+- developers who want better context before building
+- students learning how research connects to design decisions
+- people experimenting with agent-supported product work
 
-This is not just a design mockup and not just a code project.
+## What This Is Not
 
-It shows the reasoning chain:
+This is not a replacement for real user research.
 
-```text
-rough idea -> research -> user needs -> product definition -> prototype requirements -> case study -> app
-```
+It is also not a guarantee that generated artifacts are correct. The pipeline helps organize thinking, but the results still need human review, real-world validation, and iteration.
 
-The goal is to make every design choice explainable. For example, Curry Cruiser does not use free-text order notes because mobile typing adds friction and open-ended notes create ambiguity for operators. That decision is documented in the research, definition, wireframes, and prototype.
-
-## Current Limitations
-
-The Curry Cruiser project is still a prototype. Important next steps would be:
-
-- interview real lunch customers
-- interview or observe food truck operators
-- validate the real Curry Cruiser menu and ingredients
-- test the order summary with staff
-- define payment and order-locking rules
-- validate allergy and dietary language operationally
+The strongest use of this repository is as a structured starting point: it helps move from vague idea to reviewable product direction faster, while keeping assumptions visible.
 
 ## Notes
 
 - `node_modules/` and build outputs are intentionally not committed.
-- The React app is frontend-only.
-- The case study is meant to be readable by designers, developers, product people, and non-technical reviewers.
+- Stage outputs are meant to be read, edited, and improved.
+- The optional app build is frontend-only unless a later project adds backend scope.
+- The pipeline is intentionally generic and can be reused for different product ideas.
