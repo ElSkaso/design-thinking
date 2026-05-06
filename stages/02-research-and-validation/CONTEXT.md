@@ -16,10 +16,12 @@ Validate the problem and synthesize evidence.
 
 1. Read the project brief and identify research needs.
 2. Conduct market, demographic, problem-validity, and competitor research.
-3. Plan or synthesize user research where participants are unavailable.
-4. Separate evidence from assumptions.
-5. Summarize findings and implications.
-6. Run the audit, revise if needed, then save to output/.
+3. Define representative interview sample criteria and target participant groups.
+4. Write a recruitment rationale and relevant, open-ended, clear, neutral, conversational interview questions.
+5. Plan synthetic participant profiles when real participants are unavailable.
+6. Separate evidence from assumptions.
+7. Summarize findings and implications.
+8. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
@@ -33,10 +35,12 @@ Validate the problem and synthesize evidence.
 |-------|---------------|
 | Evidence labeling | Claims are labeled as evidence, assumption, risk, or open question |
 | Problem validation | Dossier addresses whether the problem is real |
+| Participant plan | Research plan names representative sample criteria, target groups, and recruitment rationale |
+| Question quality | Interview questions are relevant, open-ended, clear, neutral, and conversational |
 | Research limits | Missing or weak evidence is named directly |
 
 ## Outputs
 
 | Artifact | Location | Format |
 |----------|----------|--------|
-| Research dossier | `output/[project-slug]-research-dossier.md` | Markdown dossier |
+| Research dossier | `output/[project-slug]-research-dossier.md` | Markdown dossier with interview plan and participant sample rationale |

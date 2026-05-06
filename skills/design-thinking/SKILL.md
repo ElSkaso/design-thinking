@@ -17,8 +17,9 @@ Use this skill when the task involves UX design thinking, portfolio case studies
    - Do not lock a solution before research synthesis.
 
 2. Empathize.
-   - Gather or simulate structured research inputs.
-   - Produce user interviews, personas, user stories, user journey maps, empathy maps, aggregated empathy maps, and accessibility considerations when requested.
+   - Gather or simulate structured interview inputs from representative participants or clearly labeled synthetic profiles.
+   - Conduct or synthesize interviews before creating artifacts.
+   - Distill each interview into an empathy map, group users by shared characteristics, goals, or needs, then create personas, one-sentence user stories, journey maps, and accessibility considerations.
    - Load `references/empathize.md` for artifact formats and quality checks.
 
 3. Define.
@@ -38,7 +39,8 @@ Use this skill when the task involves UX design thinking, portfolio case studies
 ## Evidence Rules
 
 - Label unsupported claims as assumptions.
-- Tie each persona, pain point, feature, and design decision to a research signal or explicit constraint.
+- Tie each empathy map, persona, pain point, feature, and design decision to interview evidence, a research signal, or an explicit constraint.
+- Derive personas from user groups after empathy-map synthesis, not directly from desk research.
 - Preserve contradictions in research instead of smoothing them away too early.
 - Prefer realistic user language over generic UX phrasing.
 - For portfolio case studies, show the reasoning chain: problem -> research signal -> insight -> artifact -> design decision.
@@ -70,4 +72,3 @@ Ask the human to correct missing users, weak evidence, unrealistic assumptions, 
 - `references/ideate.md`: competitive audits, goal statements, HMW questions, rapid sketches, wireframe framing.
 - `references/prototype-test.md`: prototype scope, test planning, usability tasks, success criteria.
 - `references/case-study.md`: portfolio-ready UX case study structure and audit.
-

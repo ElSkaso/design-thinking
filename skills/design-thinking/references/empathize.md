@@ -1,30 +1,48 @@
 # Empathize Reference
 
-Use this reference to turn early research into human-centered evidence.
+Use this reference to turn interview research into human-centered evidence.
 
-## Research Inputs
+## Required Flow
 
-Common inputs:
+1. Recruit a representative sample or define clearly labeled synthetic participant profiles.
+2. Plan relevant, open-ended, clear, neutral, conversational interview questions.
+3. Conduct or synthesize interviews that build rapport and gather behavior, context, goals, needs, pain points, emotions, and workarounds.
+4. Distill each interview into one empathy map.
+5. Divide users into groups based on shared characteristics, goals, or needs.
+6. Create one persona for each user group.
+7. Include one compelling one-sentence user story inside each persona.
+8. Map one user journey for each persona.
 
-- Initial problem statement or product idea
-- User interview notes or planned interview prompts
-- Market and demographic research
-- Observations, quotes, complaints, reviews, forum posts, survey results
-- Accessibility constraints and edge cases
+If real users are unavailable, clearly mark interview outputs and participant profiles as hypothesis-based and identify what future research must validate.
 
-If real users are unavailable, clearly mark outputs as hypothesis-based and identify what future research must validate.
+## Participant Sample
 
-## User Interviews
+Representative means fit for the project context, not statistically representative.
 
-Interview preparation:
+Include:
 
-- Define the learning goal before writing questions.
-- Recruit participants who match or challenge the assumed target users.
-- Ask open-ended questions about behavior, context, motivation, and pain.
-- Avoid asking users to design the solution.
-- Capture quotes, actions, emotions, workarounds, and contradictions.
+- Target participant groups
+- Sample criteria
+- Recruitment rationale
+- Real or synthetic participant labels
+- Evidence limits
 
-Useful question patterns:
+The sample should include users who match the assumed target audience and, when useful, users who challenge the main assumption.
+
+## Interview Questions
+
+Questions should be:
+
+- Relevant to the research goal
+- Open-ended
+- Clear
+- Neutral
+- Conversational
+- Focused on past behavior, context, motivation, and pain
+
+Avoid asking users to design the solution.
+
+Useful patterns:
 
 - "Tell me about the last time you..."
 - "What made that difficult?"
@@ -32,27 +50,65 @@ Useful question patterns:
 - "How did you know you were done?"
 - "What would happen if this problem stayed unsolved?"
 
-Output format:
+## Interview Summaries
+
+Capture rapport-building context and user language.
 
 ```markdown
 ## Interview Summary: [PARTICIPANT_LABEL]
+- Participant fit:
 - Context:
 - Goals:
+- Needs:
 - Pain points:
+- Behaviors:
 - Workarounds:
 - Quotes:
+- Emotions:
 - Surprises:
 - Design implications:
 - Confidence:
 ```
 
+## Empathy Maps
+
+Create one empathy map per interview before creating personas.
+
+```markdown
+## Empathy Map: [PARTICIPANT_LABEL]
+- Says:
+- Thinks:
+- Does:
+- Feels:
+- Pains:
+- Gains:
+- Evidence:
+- Design implications:
+```
+
+## User Groups
+
+Group users after individual empathy maps are complete.
+
+Group by shared:
+
+- Characteristics
+- Goals
+- Needs
+- Behaviors
+- Pain points
+- Contexts or constraints
+
+Name the evidence pattern that justifies each group.
+
 ## Personas
 
-Personas should be research-backed summaries, not fictional decorations.
+Create one persona for each user group. Personas should be research-backed summaries, not fictional decorations.
 
 Include:
 
 - Name or label
+- Represented user group
 - Role/context
 - Goals
 - Needs
@@ -61,16 +117,19 @@ Include:
 - Motivations
 - Accessibility or situational constraints
 - Evidence notes
+- One-sentence user story
+- Design implication
+- Confidence
 
 Quality check:
 
-- Each persona represents a distinct behavior pattern.
+- Each persona represents a distinct user group.
 - The persona affects design choices.
 - The persona is not defined only by demographics.
 
 ## User Stories
 
-Use user stories to express needs from the user's point of view:
+Each persona must include one compelling one-sentence user story:
 
 ```text
 As a [USER_TYPE], I want to [ACTION_OR_GOAL], so that [BENEFIT_OR_REASON].
@@ -80,10 +139,11 @@ Good stories are specific enough to guide design, but broad enough to allow mult
 
 ## User Journeys And Journey Maps
 
-Journey maps show the user's experience over time.
+Create one journey map for each persona.
 
 Include:
 
+- Persona
 - Scenario
 - Stages
 - User actions
@@ -97,39 +157,8 @@ Review for:
 
 - Clear beginning and end
 - Emotional changes over the journey
-- Friction points connected to evidence
+- Friction points connected to interview evidence
 - Opportunities that can inform features or content
-
-## Empathy Maps
-
-Use empathy maps to synthesize what a user says, thinks, does, and feels.
-
-Template:
-
-```markdown
-## Empathy Map: [USER_OR_SEGMENT]
-- Says:
-- Thinks:
-- Does:
-- Feels:
-- Pains:
-- Gains:
-- Evidence:
-- Design implications:
-```
-
-## Aggregated Empathy Maps
-
-Use aggregated empathy maps when multiple participants reveal shared patterns.
-
-Include:
-
-- Repeated quotes or themes
-- Common pain points
-- Common goals
-- Contradictions between users
-- Segment differences
-- Prioritized insights
 
 ## Accessibility And Edge Cases
 
@@ -146,9 +175,13 @@ Apply the curb-cut effect: improvements for constrained users often improve the 
 
 ## Empathize Audit
 
+- Participants or synthetic profiles match the target users and constraints.
+- Interview questions are relevant, open-ended, clear, neutral, and conversational.
+- Interviews gather rapport, behavior, context, goals, needs, pain points, and emotions.
+- Each interview is distilled into one empathy map.
+- User groups are based on shared characteristics, goals, or needs.
+- Each user group has one persona.
+- Each persona includes one compelling one-sentence user story.
+- Each persona has one journey map.
 - Research claims are separated from assumptions.
-- Personas and maps include design implications.
-- Interview outputs preserve user language.
-- Edge cases are considered before solution selection.
-- Each major insight can be traced to evidence or marked for validation.
-
+- Each major insight can be traced to interview evidence or marked for validation.

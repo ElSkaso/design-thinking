@@ -6,6 +6,12 @@ It is meant to answer a simple question:
 
 > How far can we get from only a problem description if we use a clear design-thinking process and specialized agents for research, synthesis, and artifact generation?
 
+## Update
+
+Found an inconsistency where user journey maps were derived from personas instead of user interviews.
+
+The empathize stage is now explicitly interview-led. Stage 02 must define a representative participant sample, recruitment rationale, and neutral open-ended interview questions. Stage 03 now derives every downstream artifact from interviews: each interview becomes an empathy map, users are grouped by shared traits or needs, each group gets a persona, and each persona gets a one-sentence user story plus a journey map.
+
 ## My Contribution
 
 The main contribution of this project is the pipeline itself.

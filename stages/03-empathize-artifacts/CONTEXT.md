@@ -1,6 +1,6 @@
 # Stage 03: Empathize Artifacts
 
-Create user-centered design thinking artifacts from research.
+Create interview-led design thinking artifacts from research.
 
 ## Inputs
 
@@ -13,29 +13,37 @@ Create user-centered design thinking artifacts from research.
 
 ## Process
 
-1. Extract user goals, pain points, behaviors, emotions, and constraints.
-2. Create interview summaries or an interview plan.
-3. Create personas, user stories, journey maps, and empathy maps.
-4. Create an aggregated empathy map.
-5. Add accessibility and edge-case notes.
-6. Run the audit, revise if needed, then save to output/.
+1. Confirm representative interview participants or clearly labeled synthetic participant profiles.
+2. Conduct or synthesize interviews focused on rapport, behavior, needs, goals, pain points, and context.
+3. Distill each interview into one empathy map.
+4. Divide users into groups based on shared characteristics, goals, or needs.
+5. Create one persona for each user group.
+6. Include one compelling one-sentence user story inside each persona.
+7. Map one user journey for each persona.
+8. Add accessibility and edge-case notes.
+9. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
 | After Step | Agent Presents | Human Decides |
 |------------|---------------|---------------|
-| 3 | Draft personas, stories, and journeys | Whether user patterns are accurate |
+| 4 | Interview summaries, empathy maps, and user groups | Whether the user patterns are accurate before personas are created |
 
 ## Audit
 
 | Check | Pass Condition |
 |-------|---------------|
-| Evidence trace | Each artifact links to evidence or is labeled as an assumption |
-| Human-centered | Artifacts emphasize users, goals, barriers, and feelings |
-| Design implication | Each artifact states what it changes for design |
+| Participant representativeness | Participants or synthetic profiles match the target users and constraints |
+| Interview quality | Interviews gather context, goals, behaviors, needs, pain points, and rapport-building details |
+| Empathy-map derivation | Each interview has a corresponding empathy map |
+| User grouping | User groups are based on shared characteristics, goals, or needs |
+| Persona coverage | Each user group has one representative persona |
+| User-story inclusion | Each persona includes one compelling one-sentence user story |
+| Journey coverage | Each persona has one journey map |
+| Evidence trace | Each artifact links to interview evidence or is labeled as an assumption |
 
 ## Outputs
 
 | Artifact | Location | Format |
 |----------|----------|--------|
-| Empathize artifacts | `output/[project-slug]-empathize-artifacts.md` | Markdown artifact pack |
+| Empathize artifacts | `output/[project-slug]-empathize-artifacts.md` | Markdown pack with participant sample, questions, interviews, empathy maps, user groups, personas, stories, journeys, and edge cases |

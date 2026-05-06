@@ -7,7 +7,10 @@
 - Problem validity
 - Persona signals
 - Competitive landscape
-- User research plan or synthesis
+- Representative participant sample criteria
+- Interview recruitment rationale
+- Open-ended, clear, neutral, conversational interview questions
+- User research plan or synthetic participant profiles
 
 ## Source Guidance
 
@@ -20,5 +23,6 @@ Use current sources when available. If internet access is unavailable, state the
 - Evidence table
 - Assumption log
 - Competitive landscape notes
+- Interview plan
+- Participant sample rationale
 - Implications for empathize artifacts
-

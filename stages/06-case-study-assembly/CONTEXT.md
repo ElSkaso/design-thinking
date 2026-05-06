@@ -19,7 +19,7 @@ Assemble all prior work into a portfolio-ready UX case study that reads as a des
 
 1. Read all previous stage outputs.
 2. Structure the case study by phase: Problem, Research, Empathize, Define, Ideate, Prototype Direction, Validation / Testing Plan, and Outcome / Limits / Next Steps.
-3. Weave every artifact from stages 01-05 into the phase where it belongs, giving each artifact its own `###` subheader: brief, evidence, assumptions, plans, personas, stories, journeys, maps, needs, hypotheses, HMWs, concepts, feature decisions, flows, requirements, wireframes, and audits.
+3. Weave every artifact from stages 01-05 into the phase where it belongs, giving each artifact its own `###` subheader: brief, evidence, assumptions, interview plan, participant sample, interview summaries, empathy maps, user groups, personas, stories, journeys, needs, hypotheses, HMWs, concepts, feature decisions, flows, requirements, wireframes, and audits.
 4. Build the evidence chain from problem to research signal to human insight to definition to ideation decision.
 5. Preserve source traceability with short source notes where useful.
 6. Include research limitations and next steps.
