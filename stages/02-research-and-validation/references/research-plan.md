@@ -16,13 +16,30 @@
 
 Use current sources when available. If internet access is unavailable, state the limitation and produce a research plan plus hypothesis-based synthesis.
 
-## Output Sections
+## Research Dossier Structure
 
-- Research questions
-- Findings
-- Evidence table
-- Assumption log
-- Competitive landscape notes
-- Interview plan
-- Participant sample rationale
-- Implications for empathize artifacts
+Write the artifact with exactly these content sections:
+
+```markdown
+# Research Dossier: [Project]
+
+## Research Questions
+
+## Key Findings
+
+## Evidence Table
+
+## Assumption Log
+
+## Competitive Landscape
+
+## Participant Sample Plan
+
+## Interview Questions
+
+## Implications For Empathize
+
+## Research Limits
+```
+
+Use evidence type, confidence, assumptions, and design implications inside the relevant sections.

@@ -21,7 +21,8 @@ Generate solution directions and wireframe requirements.
 4. Prioritize feature candidates.
 5. Produce wireframe requirements or a wireframe pack.
 6. Present wireframes and feature scope for approval.
-7. Run the audit, revise if needed, then save to output/.
+7. Write only the exact content sections from `Ideation And Wireframes Structure`.
+8. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
@@ -36,6 +37,7 @@ Generate solution directions and wireframe requirements.
 | Problem trace | Ideas trace to the definition brief |
 | Feature discipline | Features are prioritized and justified |
 | App readiness | Wireframe requirements cover key screens, states, and flows |
+| Artifact focus | Output uses only the exact Ideation And Wireframes Structure sections |
 
 ## Outputs
 

@@ -8,7 +8,7 @@ Name the app output folder `output/[project-slug]-app/` and the handoff file `ou
 
 ## Stack
 
-Use `{{TECH_STACK}}` as the default stack. If unspecified, use React, Vite, and Tailwind.
+Use React, Vite, Tailwind, TypeScript as the default stack. If unspecified, use React, Vite, and Tailwind.
 
 ## Design Constants
 
@@ -27,4 +27,4 @@ Create shared constants for:
 - Empty, loading, success, and error states are represented when relevant.
 - Layout is responsive.
 - UI decisions match the design system.
-- Accessibility level follows `{{ACCESSIBILITY_LEVEL}}`.
+- Accessibility level follows WCAG AA.

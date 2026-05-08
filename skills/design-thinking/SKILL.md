@@ -47,13 +47,9 @@ Use this skill when the task involves UX design thinking, portfolio case studies
 
 ## Artifact Standards
 
-Every artifact should include:
+Stage `CONTEXT.md` files own the operational layer of the workflow. Generated artifact files should stay minimal and content-centered so the final case study can also stay focused.
 
-- Purpose: why this artifact exists in the project.
-- Inputs: which research notes, assumptions, or prior artifacts informed it.
-- Output: the artifact itself.
-- Design implication: what changes because of this artifact.
-- Confidence: high, medium, or low, based on evidence quality.
+Write only the artifact sections required by the current stage or reference. Keep evidence labels, assumptions, design implications, confidence, and limitations when they are part of the UX artifact itself.
 
 ## Human Checkpoints
 

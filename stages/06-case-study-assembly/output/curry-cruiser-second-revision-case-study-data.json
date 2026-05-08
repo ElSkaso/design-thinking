@@ -1,0 +1,265 @@
+{
+  "title": "Curry Cruiser Second Revision",
+  "slug": "curry-cruiser-second-revision",
+  "tagline": "A structured Thai curry ordering flow for faster customers and cleaner food truck operations.",
+  "overview": [
+    "Curry Cruiser is a Thai curry food truck concept that needs a digital ordering experience for predefined curry customization without free-text fields.",
+    "The UX challenge is dual-sided: customers need speed, confidence, and fallback access; staff need complete, kitchen-readable orders during rush service.",
+    "The recommended direction is a guided mobile curry builder with optional QR/direct entry, recommended combos, structured dietary handling, staff-ticket review, unavailable-option prevention, and clear confirmation."
+  ],
+  "problem": "Food truck customers can hesitate or make ambiguous requests when customizing curry under time pressure, while staff lose time interpreting incomplete or unsupported orders.",
+  "solution": "A mobile-first guided curry builder that captures required predefined choices, makes dietary constraints visible, supports non-QR fallback access, and turns the customer review into a staff-readable ticket.",
+  "role": "UX research synthesis, product framing, design thinking artifacts, wireframe requirements",
+  "timeline": "Concept pipeline through Stage 06 case study assembly",
+  "highlights": [
+    "Separated customer ordering friction from staff operational friction.",
+    "Identified four provisional user groups: fast default seekers, careful choice makers, access-fragile customers, and rush-mode staff.",
+    "Converted the no-free-text constraint into structured dietary, unavailable, and unsupported-need handling.",
+    "Kept QR access optional because adoption signals are mixed.",
+    "Defined prototype-ready mobile screen requirements without enabling app build by default."
+  ],
+  "process": [
+    {
+      "id": "research",
+      "title": "Research",
+      "summary": "Desk research validated that off-premise ordering is common, speed and intuitive ordering matter, QR access has mixed customer reactions, and accessible mobile controls are non-negotiable.",
+      "keyArtifacts": [
+        "Research questions",
+        "Evidence table",
+        "Competitive landscape"
+      ],
+      "insights": [
+        "Fast off-premise ordering behavior is a credible context for Curry Cruiser.",
+        "QR should be treated as optional access rather than the value proposition.",
+        "No-free-text ordering needs structured exception handling."
+      ],
+      "relatedUserThreads": [
+        "fast-default-seeker",
+        "careful-choice-maker",
+        "access-fragile-customer"
+      ]
+    },
+    {
+      "id": "empathize",
+      "title": "Empathize",
+      "summary": "Synthetic interviews produced provisional user groups and personas that clarify speed, dietary confidence, access resilience, and staff readability needs.",
+      "keyArtifacts": [
+        "Synthetic interview summaries",
+        "User groups",
+        "Personas and journey maps"
+      ],
+      "insights": [
+        "Fast customers need defaults and short required choices.",
+        "Careful customizers need visible dietary and spice meaning.",
+        "Staff need tickets that require no interpretation."
+      ],
+      "relatedUserThreads": [
+        "fast-default-seeker",
+        "careful-choice-maker",
+        "rush-mode-staff"
+      ]
+    },
+    {
+      "id": "define",
+      "title": "Define",
+      "summary": "The definition phase converted research and empathy patterns into testable problem statements and hypotheses.",
+      "keyArtifacts": [
+        "Problem statements",
+        "User needs",
+        "Problem/hypothesis pairs"
+      ],
+      "insights": [
+        "The ordering experience must solve both customer uncertainty and staff interpretation work.",
+        "Structured dietary choices are necessary to make no-free-text viable.",
+        "The staff ticket is a primary UX artifact."
+      ],
+      "relatedUserThreads": [
+        "careful-choice-maker",
+        "rush-mode-staff"
+      ]
+    },
+    {
+      "id": "ideate",
+      "title": "Ideate",
+      "summary": "The selected direction combines a guided curry builder, recommended combos, optional QR/direct entry, structured dietary handling, and a staff-ticket-style review.",
+      "keyArtifacts": [
+        "Concept directions",
+        "Feature prioritization",
+        "Screen requirements"
+      ],
+      "insights": [
+        "Recommended combos support speed without removing customization.",
+        "Disabled unavailable states prevent invalid orders.",
+        "Review screens should mirror staff fulfillment order."
+      ],
+      "relatedUserThreads": [
+        "fast-default-seeker",
+        "access-fragile-customer",
+        "rush-mode-staff"
+      ]
+    }
+  ],
+  "userThreads": [
+    {
+      "id": "fast-default-seeker",
+      "userGroup": "Fast Default Seekers",
+      "sourceInsight": "Time-pressed customers value speed, defaults, and minimal required interaction when ordering food near the truck.",
+      "sourceArtifacts": [
+        "P1 synthetic interview",
+        "Maya persona",
+        "Maya journey map"
+      ],
+      "persona": {
+        "name": "Maya",
+        "summary": "A lunch customer near the truck with limited break time who wants a reliable curry without slowing the line."
+      },
+      "userStory": "As a time-pressed lunch customer, I want a guided curry order with sensible defaults, so that I can submit confidently without slowing down the line.",
+      "journeySummary": {
+        "scenario": "Orders lunch near the truck during a short break.",
+        "stages": [
+          "Notice truck",
+          "Start order",
+          "Choose defaults",
+          "Review",
+          "Submit and pickup"
+        ],
+        "keyPainPoint": "Too many equal choices under time pressure.",
+        "opportunity": "Recommended combo path with short required choices and a concise review."
+      },
+      "designImpact": "Put recommended combos and required choices first, with optional customization secondary."
+    },
+    {
+      "id": "careful-choice-maker",
+      "userGroup": "Careful Choice Makers",
+      "sourceInsight": "Customers with dietary, ingredient, or spice needs need visible confidence before they can trust a no-free-text ordering flow.",
+      "sourceArtifacts": [
+        "P2 synthetic interview",
+        "Priya persona",
+        "Priya journey map"
+      ],
+      "persona": {
+        "name": "Priya",
+        "summary": "A careful customizer who wants Thai curry but needs ingredient, dietary, and spice clarity before submitting."
+      },
+      "userStory": "As a careful customizer, I want predefined dietary and spice choices that explain what they mean, so that I can order safely without typing special instructions.",
+      "journeySummary": {
+        "scenario": "Checks whether a curry order fits dietary and spice needs.",
+        "stages": [
+          "Evaluate menu",
+          "Customize",
+          "Handle exceptions",
+          "Review",
+          "Pickup"
+        ],
+        "keyPainPoint": "No visible way to represent restrictions without free text.",
+        "opportunity": "Structured dietary controls, spice descriptions, and unsupported-need fallback."
+      },
+      "designImpact": "Add structured dietary/allergen choices and keep those selections visible through review."
+    },
+    {
+      "id": "rush-mode-staff",
+      "userGroup": "Rush-Mode Staff",
+      "sourceInsight": "Staff need orders that are complete, standardized, and readable at a glance during peak service.",
+      "sourceArtifacts": [
+        "P4 synthetic interview",
+        "Lina persona",
+        "Lina journey map"
+      ],
+      "persona": {
+        "name": "Lina",
+        "summary": "A Curry Cruiser staff operator trying to keep orders accurate and moving during busy service."
+      },
+      "userStory": "As a food truck staff member, I want every submitted order to arrive in a consistent kitchen-readable format, so that I can prepare it accurately during rush service.",
+      "journeySummary": {
+        "scenario": "Receives and prepares customized orders during rush.",
+        "stages": [
+          "Receive order",
+          "Prepare curry",
+          "Resolve exceptions",
+          "Hand off",
+          "Recover errors"
+        ],
+        "keyPainPoint": "Inconsistent or incomplete ticket details.",
+        "opportunity": "Required fields and staff-readable ticket sequence."
+      },
+      "designImpact": "Make the customer review screen mirror the staff ticket structure."
+    }
+  ],
+  "keyDecisions": [
+    {
+      "decision": "Use a guided curry builder with required predefined choices.",
+      "why": "It reduces decision overload and prevents incomplete orders.",
+      "impact": "Customers get a faster path and staff receive complete tickets.",
+      "relatedUserThreads": [
+        "fast-default-seeker",
+        "rush-mode-staff"
+      ]
+    },
+    {
+      "decision": "Keep QR access optional.",
+      "why": "QR ordering can help entry but can also create adoption, readability, privacy, or connectivity friction.",
+      "impact": "Customers can still order through direct links or staff fallback.",
+      "relatedUserThreads": [
+        "access-fragile-customer"
+      ]
+    },
+    {
+      "decision": "Represent dietary and allergy needs with structured choices.",
+      "why": "No-free-text ordering is only trustworthy if common constraints are visible and unsupported needs have a path.",
+      "impact": "Careful customers can decide whether the order is safe before submission.",
+      "relatedUserThreads": [
+        "careful-choice-maker"
+      ]
+    },
+    {
+      "decision": "Mirror the staff ticket in the review screen.",
+      "why": "The same structure helps customers check details and staff prepare orders accurately.",
+      "impact": "Reduces preventable clarification and fulfillment errors.",
+      "relatedUserThreads": [
+        "rush-mode-staff"
+      ]
+    },
+    {
+      "decision": "Defer payment, loyalty, delivery, and accounts.",
+      "why": "They add friction and are not validated as core to the current problem.",
+      "impact": "Keeps the prototype focused on ordering clarity and operational fit."
+    }
+  ],
+  "validation": [
+    "Test whether users can complete a standard order in under two minutes.",
+    "Test whether users can identify whether a dietary restriction is supported before submit.",
+    "Test whether users can recover when QR scanning fails or is undesirable.",
+    "Test whether staff can interpret submitted orders without clarifying questions.",
+    "Test whether unavailable choices and unsupported needs prevent invalid orders."
+  ],
+  "outcome": "The pipeline produced a research-backed concept and wireframe requirements for Curry Cruiser, with medium confidence because real customer and staff interviews are still needed.",
+  "nextSteps": [
+    "Interview 5-7 customers and 2-3 staff/operators.",
+    "Validate the exact curry option taxonomy against the real menu.",
+    "Prototype the guided builder and staff-ticket review.",
+    "Run usability tests for standard, dietary, QR fallback, and sold-out flows.",
+    "Decide whether payment belongs in scope after observing actual friction."
+  ],
+  "sources": [
+    {
+      "label": "Stage 01 Project Brief",
+      "path": "stages/01-problem-intake/output/curry-cruiser-second-revision-project-brief.md"
+    },
+    {
+      "label": "Stage 02 Research Dossier",
+      "path": "stages/02-research-and-validation/output/curry-cruiser-second-revision-research-dossier.md"
+    },
+    {
+      "label": "Stage 03 Empathize Artifacts",
+      "path": "stages/03-empathize-artifacts/output/curry-cruiser-second-revision-empathize-artifacts.md"
+    },
+    {
+      "label": "Stage 04 Definition Brief",
+      "path": "stages/04-define-artifacts/output/curry-cruiser-second-revision-definition-brief.md"
+    },
+    {
+      "label": "Stage 05 Ideation And Wireframes",
+      "path": "stages/05-ideation-and-wireframes/output/curry-cruiser-second-revision-ideation-wireframes.md"
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 Read this file when the user types `setup`. First offer the user a fast path: they can answer "use defaults" to apply the default profile below and start immediately. If they want to customize, ask all questions in a single conversational pass. These answers configure workspace defaults and can be changed later by editing the listed files. Per-run details such as the specific project title and problem statement are collected by Stage 01.
 
+Setup configures defaults only. Do not delete stages, remove routing, remove skills, or otherwise change the workspace process during setup unless the user explicitly asks for a structural workspace refactor separate from answering the setup questionnaire.
+
 ## Default Profile
 
 If the user says "use defaults", apply these values:
@@ -58,7 +60,7 @@ If the user says "use defaults", apply these values:
 - Files: `shared/project-profile.md`
 - Type: yes/no
 - Default: yes
-- If NO: remove `stages/07-react-app-build/` from the generated workspace and remove app-build routing from `AGENTS.md` and `CONTEXT.md`.
+- If NO: set `App build enabled` to `no` in `shared/project-profile.md` only. Leave `stages/07-react-app-build/`, app-build routing, app refinement routing, and frontend skill references intact so the optional stage remains available if a future run explicitly asks for it.
 
 ### Q7: What frontend stack should the app build stage use?
 - Placeholder: `TECH_STACK`
@@ -110,5 +112,7 @@ If the user says "use defaults", apply these values:
 ## After Onboarding
 
 Replace all listed placeholders across the workspace. Then scan the entire workspace for remaining double-brace placeholder patterns. If any remain, ask for the missing information before continuing.
+
+Before finishing, verify that setup did not alter the workspace process: `AGENTS.md`, `CONTEXT.md`, stage folders, routing tables, and skill references should remain structurally intact unless the user separately requested process changes.
 
 When setup is complete, tell the user: "Setup is complete. Start with Stage 01: Problem Intake."

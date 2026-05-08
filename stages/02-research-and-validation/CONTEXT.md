@@ -21,7 +21,8 @@ Validate the problem and synthesize evidence.
 5. Plan synthetic participant profiles when real participants are unavailable.
 6. Separate evidence from assumptions.
 7. Summarize findings and implications.
-8. Run the audit, revise if needed, then save to output/.
+8. Write only the exact content sections from `Research Dossier Structure`.
+9. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
@@ -38,6 +39,7 @@ Validate the problem and synthesize evidence.
 | Participant plan | Research plan names representative sample criteria, target groups, and recruitment rationale |
 | Question quality | Interview questions are relevant, open-ended, clear, neutral, and conversational |
 | Research limits | Missing or weak evidence is named directly |
+| Artifact focus | Output uses only the exact Research Dossier Structure sections |
 
 ## Outputs
 

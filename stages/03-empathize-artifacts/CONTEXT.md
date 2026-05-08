@@ -21,7 +21,8 @@ Create interview-led design thinking artifacts from research.
 6. Include one compelling one-sentence user story inside each persona.
 7. Map one user journey for each persona.
 8. Add accessibility and edge-case notes.
-9. Run the audit, revise if needed, then save to output/.
+9. Write only the exact content sections from `Empathize Artifact Structure`.
+10. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
@@ -41,6 +42,7 @@ Create interview-led design thinking artifacts from research.
 | User-story inclusion | Each persona includes one compelling one-sentence user story |
 | Journey coverage | Each persona has one journey map |
 | Evidence trace | Each artifact links to interview evidence or is labeled as an assumption |
+| Artifact focus | Output uses only the exact Empathize Artifact Structure sections |
 
 ## Outputs
 

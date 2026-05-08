@@ -25,7 +25,8 @@ Build the optional local React app from approved wireframes.
 6. Run build and browser checks when tools are available.
 7. Write run instructions and deployment notes.
 8. If refining an existing app, append an entry to `output/[project-slug]-app-refinements.md`.
-9. Run the audit, revise if needed, then save to output/.
+9. Keep handoff and refinement files focused on app usage, verification, and product changes.
+10. Run the audit, revise if needed, then save to output/.
 
 ## App Refinements
 
@@ -55,6 +56,7 @@ Each entry should include:
 | Build health | App installs and builds when tools are available |
 | UX quality | Main flows, states, responsive behavior, and accessibility are checked |
 | Refinement trace | Existing app changes are documented in the app-specific refinement log |
+| Artifact focus | Handoff and refinement files use only app-relevant content sections |
 
 ## Outputs
 

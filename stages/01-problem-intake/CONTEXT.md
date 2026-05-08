@@ -18,7 +18,8 @@ Frame a rough product problem as a researchable UX challenge.
 3. Separate facts, assumptions, open questions, and desired outcomes.
 4. Identify target users, context, constraints, and success signals.
 5. Write research questions for Stage 02.
-6. Run the audit, revise if needed, then save to output/.
+6. Write only the exact content sections from `Project Brief Structure`.
+7. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
@@ -33,6 +34,7 @@ Frame a rough product problem as a researchable UX challenge.
 | Problem clarity | Problem is specific enough to research but does not prescribe a solution |
 | Assumption labeling | Facts, assumptions, and open questions are separate |
 | Research readiness | Stage 02 has concrete research questions |
+| Artifact focus | Output uses only the exact Project Brief Structure sections |
 
 ## Outputs
 

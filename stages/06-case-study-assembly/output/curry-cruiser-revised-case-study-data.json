@@ -1,0 +1,295 @@
+{
+  "title": "Curry Cruiser Revised",
+  "slug": "curry-cruiser-revised",
+  "tagline": "A structured Thai curry ordering flow that keeps customization clear for customers and prep details readable for staff.",
+  "overview": [
+    "Curry Cruiser Revised explores a mobile-first ordering experience for a Thai curry food truck where customers customize orders through predefined choices instead of free-text notes.",
+    "The work balances two user needs: customers need to order quickly and confidently under food truck time pressure, while staff need complete, supported, consistently formatted tickets during rush service.",
+    "The final direction is Curry Builder With Staff-Ready Review, a lightweight responsive flow with guided curry choices, review-before-submit, optional QR/direct/staff entry, confirmation, and compact staff ticket output."
+  ],
+  "problem": "Customers may hesitate or submit incomplete curry orders when menu choices, spice levels, pickup details, or QR access feel unclear; staff may lose time interpreting ambiguous, unsupported, or incomplete order details.",
+  "solution": "Model curry ordering as required, clearly grouped choices with short food-language guidance, structured dietary and pickup details, a human-readable review step, visible fallback paths, and staff-readable ticket sequencing.",
+  "role": "UX research synthesis, product definition, ideation, wireframe requirements, and case study assembly",
+  "timeline": "Stage 01 through Stage 06 revised case study run",
+  "highlights": [
+    "Separated QR access from the core value proposition so scanning stays optional.",
+    "Turned the no-free-text constraint into required modifier-style groups.",
+    "Linked first-time menu uncertainty to short curry and spice explanations.",
+    "Made staff ticket readability a primary user need.",
+    "Kept payment, accounts, loyalty, delivery, and free-text requests out of first scope."
+  ],
+  "process": [
+    {
+      "id": "research",
+      "title": "Research",
+      "summary": "Desk research validated the broad plausibility of mobile off-premises ordering, food truck speed pressure, structured modifiers, QR ordering feasibility, and accessible form patterns while flagging Curry Cruiser-specific gaps.",
+      "keyArtifacts": [
+        "Research findings",
+        "Evidence table",
+        "Assumption log"
+      ],
+      "insights": [
+        "Mobile ordering is directionally valid for a food truck context, but the flow must stay fast and lightweight.",
+        "Structured restaurant modifiers support predefined customization better than blank notes.",
+        "QR access is feasible, but QR-only ordering creates adoption and accessibility risk."
+      ],
+      "relatedUserThreads": [
+        "riley-time-pressed-regular",
+        "maya-curious-first-timer",
+        "jordan-peak-service-expediter"
+      ]
+    },
+    {
+      "id": "empathize",
+      "title": "Empathize",
+      "summary": "Synthetic participant artifacts represented time-pressed customers, first-time curry customers, QR-cautious customers, and rush-period staff because real interviews were unavailable.",
+      "keyArtifacts": [
+        "Participant sample",
+        "Empathy maps",
+        "Personas and journey maps"
+      ],
+      "insights": [
+        "Speed only helps if customers can still review and trust the order.",
+        "Unfamiliar curry and spice labels need short guidance.",
+        "Staff need valid, complete orders they can scan quickly."
+      ],
+      "relatedUserThreads": [
+        "riley-time-pressed-regular",
+        "maya-curious-first-timer",
+        "jordan-peak-service-expediter"
+      ]
+    },
+    {
+      "id": "define",
+      "title": "Define",
+      "summary": "The definition phase narrowed the challenge to balancing customer confidence, speed, menu guidance, optional access, and staff-readable structure without overclaiming unvalidated details.",
+      "keyArtifacts": [
+        "Primary problem statement",
+        "User needs statements",
+        "Hypothesis statements"
+      ],
+      "insights": [
+        "The problem is not simply making ordering digital.",
+        "Staff clarity is a user need, not a back-office afterthought.",
+        "Payment, pickup process, menu structure, and allergy policy remain validation targets."
+      ],
+      "relatedUserThreads": [
+        "riley-time-pressed-regular",
+        "maya-curious-first-timer",
+        "jordan-peak-service-expediter"
+      ]
+    },
+    {
+      "id": "ideate",
+      "title": "Ideate",
+      "summary": "Ideation combined a guided builder, staff prep sequence, confidence review, QR fallback entry, allergy guardrails, and pickup ticket into one focused ordering direction.",
+      "keyArtifacts": [
+        "How Might We questions",
+        "Prioritized feature candidates",
+        "Selected wireframe direction"
+      ],
+      "insights": [
+        "The strongest concept is a mobile-first structured builder with clear review and confirmation.",
+        "Feature scope should exclude unvalidated payment, accounts, loyalty, delivery, order history, and free-text requests.",
+        "Fallback, disabled, loading, error, and success states are part of the first prototype requirements."
+      ],
+      "relatedUserThreads": [
+        "riley-time-pressed-regular",
+        "maya-curious-first-timer",
+        "jordan-peak-service-expediter"
+      ]
+    },
+    {
+      "id": "prototype",
+      "title": "Prototype Direction",
+      "summary": "The wireframe requirements define an entry screen, curry selection, protein/base selection, spice/add-ons, dietary and pickup details, order review, and confirmation/pickup ticket.",
+      "keyArtifacts": [
+        "Screen requirements",
+        "Text wireframes",
+        "Staff-readable ticket requirement"
+      ],
+      "insights": [
+        "Review and confirmation should be explicit screens, not implied states.",
+        "Submitted order data should follow a compact prep-readable sequence.",
+        "Severe allergies and failed submission states should route customers to staff rather than accepting risky free text."
+      ],
+      "relatedUserThreads": [
+        "riley-time-pressed-regular",
+        "maya-curious-first-timer",
+        "jordan-peak-service-expediter"
+      ]
+    }
+  ],
+  "userThreads": [
+    {
+      "id": "riley-time-pressed-regular",
+      "userGroup": "Fast Repeat Orderers",
+      "sourceInsight": "Time-pressed customers may be digitally comfortable but still need visible required choices, quick review, and unmistakable confirmation before the flow feels faster than talking to staff.",
+      "sourceArtifacts": [
+        "Interview Summary: P1, Time-Pressed Regular",
+        "Empathy Map: P1, Time-Pressed Regular",
+        "Journey Map: Riley, The Time-Pressed Regular"
+      ],
+      "persona": {
+        "name": "Riley",
+        "summary": "A lunch customer ordering near the truck between commitments who wants a fast, accurate curry order and a clear pickup cue."
+      },
+      "userStory": "As a time-pressed food truck customer, I want to customize my usual curry quickly and review it before submission, so that I can skip avoidable line friction without worrying about mistakes.",
+      "journeySummary": {
+        "scenario": "Riley opens the ordering link near the truck, chooses required curry details, reviews the order, submits, and waits for pickup.",
+        "stages": [
+          "Notice",
+          "Choose",
+          "Review",
+          "Submit",
+          "Pickup"
+        ],
+        "keyPainPoint": "Fast ordering breaks down when required choices, final review, or pickup confirmation are unclear.",
+        "opportunity": "Use concise required sections, a plain review screen, and a confirmation tied to pickup."
+      },
+      "designImpact": "The flow avoids account-heavy friction, keeps required selections visible, and includes review plus confirmation as speed-supporting features."
+    },
+    {
+      "id": "maya-curious-first-timer",
+      "userGroup": "Guided Decision Makers",
+      "sourceInsight": "First-time customers can be interested in Thai curry but hesitate when curry names, spice levels, or included ingredients are not explained.",
+      "sourceArtifacts": [
+        "Interview Summary: P2, Curious First-Timer",
+        "Empathy Map: P2, Curious First-Timer",
+        "Journey Map: Maya, The Curious First-Timer"
+      ],
+      "persona": {
+        "name": "Maya",
+        "summary": "A first-time event customer who wants to try Curry Cruiser without guessing what curry type or spice level will match her taste."
+      },
+      "userStory": "As a first-time Curry Cruiser customer, I want short guidance on curry types and spice levels, so that I can choose confidently without asking staff to explain the whole menu.",
+      "journeySummary": {
+        "scenario": "Maya browses curry options, compares taste and spice cues, customizes the bowl, reviews the plain-language order, and picks it up.",
+        "stages": [
+          "Browse",
+          "Decide",
+          "Customize",
+          "Review",
+          "Pickup"
+        ],
+        "keyPainPoint": "Option names alone do not give enough confidence for unfamiliar curry and spice decisions.",
+        "opportunity": "Pair predefined options with short taste descriptions, spice scale language, and included/default notes."
+      },
+      "designImpact": "The wireframes use short option descriptions, recommended markers only when validated, and human-readable review copy instead of POS shorthand."
+    },
+    {
+      "id": "jordan-peak-service-expediter",
+      "userGroup": "Operational Clarity Staff",
+      "sourceInsight": "Staff working during rush service need complete, supported, consistently ordered tickets because free-text notes and missing choices slow preparation.",
+      "sourceArtifacts": [
+        "Interview Summary: P4, Peak-Service Expediter",
+        "Empathy Map: P4, Peak-Service Expediter",
+        "Journey Map: Jordan, The Peak-Service Expediter"
+      ],
+      "persona": {
+        "name": "Jordan",
+        "summary": "A Curry Cruiser staff member who prepares orders and manages handoff in a noisy, time-sensitive food truck environment."
+      },
+      "userStory": "As a Curry Cruiser staff member, I want every submitted order to use complete and supported choices, so that I can prepare it accurately without stopping service to clarify details.",
+      "journeySummary": {
+        "scenario": "Jordan receives a ticket, scans modifiers, prepares the curry, calls the pickup identifier, and resolves exceptions during rush service.",
+        "stages": [
+          "Receive",
+          "Read",
+          "Prepare",
+          "Handoff",
+          "Resolve"
+        ],
+        "keyPainPoint": "Ambiguous notes, invalid choices, and inconsistent ticket order interrupt prep flow.",
+        "opportunity": "Enforce required supported choices and format the submitted order in prep-readable sequence."
+      },
+      "designImpact": "Customer-facing flexibility is bounded by operational feasibility, and the confirmation includes a compact staff-readable ticket sequence."
+    }
+  ],
+  "keyDecisions": [
+    {
+      "decision": "Use required grouped choices instead of free-text customization.",
+      "why": "Stage 01 set no-free-text ordering as a constraint, and Stage 02 found that restaurant modifier systems support predefined options, limits, ordering, and ticket display.",
+      "impact": "Customers cannot submit missing core prep details, and staff receive more consistent orders.",
+      "relatedUserThreads": [
+        "jordan-peak-service-expediter"
+      ]
+    },
+    {
+      "decision": "Make curry and spice guidance part of the selection UI.",
+      "why": "Maya's synthetic evidence showed that unfamiliar curry names and subjective spice labels can create hesitation.",
+      "impact": "First-time customers get enough context to choose without asking staff to explain the full menu.",
+      "relatedUserThreads": [
+        "maya-curious-first-timer"
+      ]
+    },
+    {
+      "decision": "Keep review-before-submit in the core flow.",
+      "why": "Riley and cautious users need confidence that the order is correct before sending it, and accessible form guidance supports clear final actions near the end of the task.",
+      "impact": "Customers can catch mistakes before submission, reducing post-submit corrections.",
+      "relatedUserThreads": [
+        "riley-time-pressed-regular"
+      ]
+    },
+    {
+      "decision": "Offer QR, direct URL, and staff-assisted entry.",
+      "why": "QR ordering is feasible, but Stage 02 identified device, connectivity, accessibility, and preference risks.",
+      "impact": "The flow can serve QR-comfortable customers without excluding customers who cannot or do not want to scan."
+    },
+    {
+      "decision": "Route severe allergies and complex exceptions to staff.",
+      "why": "The project avoids free text, and allergy handling is operationally and legally unvalidated.",
+      "impact": "The prototype does not pretend complex safety needs can be safely resolved through predefined checkboxes alone."
+    },
+    {
+      "decision": "Exclude payment, accounts, loyalty, delivery, order history, and kitchen dashboard from first scope.",
+      "why": "Payment and pickup workflow are unknown, and the evidence points to a lightweight ordering task rather than a full restaurant platform.",
+      "impact": "The first prototype stays focused on order completion, customer confidence, and staff readability."
+    }
+  ],
+  "validation": [
+    "Interview real Curry Cruiser customers and staff to replace synthetic participant evidence.",
+    "Validate the actual menu categories, supported combinations, dietary flags, sold-out behavior, payment model, and pickup identifiers.",
+    "Run a first-time menu comprehension test where users explain their selected curry and spice level after completing the flow.",
+    "Run a staff ticket scan test to see whether required prep details can be identified in five seconds or less.",
+    "Test QR-comfortable and QR-cautious users on entry, fallback discovery, review, submission, and confirmation."
+  ],
+  "outcome": "The revised case study establishes a credible prototype direction with medium support for the broad mobile, structured-ordering, and food truck context, but low direct confidence in Curry Cruiser-specific behavior because all participant artifacts are synthetic and the real menu, workflow, payment, pickup, and allergy policies remain unvalidated.",
+  "nextSteps": [
+    "Confirm Curry Cruiser's real menu options and operationally valid modifier groups.",
+    "Run the Stage 02 customer and staff interview plan.",
+    "Prototype the mobile flow in low fidelity and test order completion.",
+    "Validate the staff-readable ticket format during rush-like review.",
+    "Decide whether payment belongs in a later scope."
+  ],
+  "sources": [
+    {
+      "label": "Stage 01 project brief",
+      "path": "stages/01-problem-intake/output/curry-cruiser-revised-project-brief.md"
+    },
+    {
+      "label": "Stage 02 research dossier",
+      "path": "stages/02-research-and-validation/output/curry-cruiser-revised-research-dossier.md"
+    },
+    {
+      "label": "Stage 03 empathize artifacts",
+      "path": "stages/03-empathize-artifacts/output/curry-cruiser-revised-empathize-artifacts.md"
+    },
+    {
+      "label": "Stage 04 definition brief",
+      "path": "stages/04-define-artifacts/output/curry-cruiser-revised-definition-brief.md"
+    },
+    {
+      "label": "Stage 05 ideation and wireframes",
+      "path": "stages/05-ideation-and-wireframes/output/curry-cruiser-revised-ideation-wireframes.md"
+    },
+    {
+      "label": "Case study reference",
+      "path": "skills/design-thinking/references/case-study.md"
+    },
+    {
+      "label": "Value framework",
+      "path": "shared/value-framework.md"
+    }
+  ]
+}

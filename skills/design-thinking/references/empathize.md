@@ -15,6 +15,36 @@ Use this reference to turn interview research into human-centered evidence.
 
 If real users are unavailable, clearly mark interview outputs and participant profiles as hypothesis-based and identify what future research must validate.
 
+## Empathize Artifact Structure
+
+Write the artifact with exactly these content sections:
+
+```markdown
+# Empathize Artifacts: [Project]
+
+## Participant Sample
+
+## Interview Questions
+
+## Interview Summaries
+
+## Empathy Maps
+
+## User Groups
+
+## Personas
+
+## User Stories
+
+## Journey Maps
+
+## Accessibility And Edge Cases
+
+## Research Limits
+```
+
+Use evidence basis, confidence, assumptions, and design implications inside the relevant artifact sections.
+
 ## Participant Sample
 
 Representative means fit for the project context, not statistically representative.
@@ -173,7 +203,7 @@ Consider permanent, temporary, and situational constraints across:
 
 Apply the curb-cut effect: improvements for constrained users often improve the experience for everyone.
 
-## Empathize Audit
+## Empathize Quality Check
 
 - Participants or synthetic profiles match the target users and constraints.
 - Interview questions are relevant, open-ended, clear, neutral, and conversational.

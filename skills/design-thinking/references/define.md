@@ -2,6 +2,28 @@
 
 Use this reference to transform research into a focused product problem.
 
+## Definition Brief Structure
+
+Write the artifact with exactly these content sections:
+
+```markdown
+# Definition Brief: [Project]
+
+## Problem Statements
+
+## User Needs
+
+## Hypotheses
+
+## Problem / Hypothesis Pairs
+
+## Value Proposition
+
+## Definition Limits
+```
+
+Use evidence basis, confidence, assumptions, and design implications inside the relevant artifact sections.
+
 ## Problem Framing
 
 A strong problem frame is:
@@ -123,11 +145,10 @@ Use these ideas when reviewing a problem or solution:
 
 Apply human factors as design rationale, not decoration.
 
-## Define Audit
+## Define Quality Check
 
 - The problem is about user need, not a predetermined feature.
 - Claims trace to empathize artifacts or research.
 - Hypotheses are testable.
 - Value proposition is specific to a user segment.
 - Human factors are used to clarify behavior and decisions.
-

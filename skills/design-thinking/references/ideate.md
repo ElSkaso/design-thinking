@@ -2,6 +2,34 @@
 
 Use this reference to generate solution directions from a defined problem.
 
+## Ideation And Wireframes Structure
+
+Write the artifact with exactly these content sections:
+
+```markdown
+# Ideation And Wireframes: [Project]
+
+## Goal Statements
+
+## How Might We Questions
+
+## Competitive Design Patterns
+
+## Concept Directions
+
+## Feature Prioritization
+
+## User Flow
+
+## Screen Requirements
+
+## Wireframe Requirements
+
+## Ideation Limits
+```
+
+Use evidence basis, confidence, assumptions, and design implications inside the relevant artifact sections.
+
 ## Ideation Principles
 
 - Generate quantity before narrowing.
@@ -10,13 +38,13 @@ Use this reference to generate solution directions from a defined problem.
 - Include accessibility and edge cases in ideation, not only after design.
 - Evaluate ideas against evidence, value, feasibility, and user fit.
 
-## Competitive Audit
+## Competitive Design Patterns
 
-Use a competitive audit to understand alternatives, market expectations, and gaps.
+Review competitors, alternatives, and workarounds to understand market expectations and gaps.
 
 Include direct competitors, indirect competitors, and user workarounds.
 
-Audit dimensions:
+Review dimensions:
 
 - Audience and positioning
 - First impression
@@ -30,11 +58,11 @@ Audit dimensions:
 - Weaknesses
 - Gaps/opportunities
 
-Output format:
+Competitive design patterns structure:
 
 ```markdown
-## Competitive Audit Summary
-- Audit goal:
+## Competitive Design Patterns
+- Review goal:
 - Competitors reviewed:
 - Direct competitors:
 - Indirect competitors:
@@ -138,11 +166,10 @@ Include:
 - Accessibility considerations
 - Notes that tie layout choices to research findings
 
-## Ideate Audit
+## Ideate Quality Check
 
 - Ideas trace back to a problem statement or HMW.
 - Competitive audit identifies gaps, not just examples to copy.
 - Multiple solution directions were considered.
 - Wireframe requirements cover real user flows and states.
 - Selected direction is justified by evidence, feasibility, and user value.
-

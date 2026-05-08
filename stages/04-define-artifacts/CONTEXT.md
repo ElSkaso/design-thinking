@@ -18,7 +18,8 @@ Define the UX problem, hypotheses, and value proposition.
 3. Write hypothesis statements and problem/hypothesis pairs.
 4. Write the value proposition.
 5. Check that definitions do not prescribe a solution too early.
-6. Run the audit, revise if needed, then save to output/.
+6. Write only the exact content sections from `Definition Brief Structure`.
+7. Run the audit, revise if needed, then save to output/.
 
 ## Checkpoints
 
@@ -33,6 +34,7 @@ Define the UX problem, hypotheses, and value proposition.
 | User need focus | Statements describe user needs, not features |
 | Testability | Hypotheses include observable outcomes |
 | Value clarity | Value proposition names user, problem, outcome, and difference |
+| Artifact focus | Output uses only the exact Definition Brief Structure sections |
 
 ## Outputs
 

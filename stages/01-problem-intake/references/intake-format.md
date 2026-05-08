@@ -1,18 +1,30 @@
 # Intake Format
 
-## Required Sections
+## Project Brief Structure
 
-- Project title
-- Project slug
-- Raw problem or idea
-- Target users
-- Context and constraints
-- Known facts
-- Assumptions
-- Open questions
-- Desired outcomes
-- Research questions
-- Success signals
+Write the artifact with exactly these content sections:
+
+```markdown
+# Project Brief: [Project]
+
+## Problem Frame
+
+## Target Users
+
+## Context And Constraints
+
+## Known Facts
+
+## Assumptions
+
+## Open Questions
+
+## Research Questions
+
+## Success Signals
+```
+
+Keep the brief focused on the project result. Include evidence basis or confidence only when already known and useful.
 
 ## Default Problem
 
