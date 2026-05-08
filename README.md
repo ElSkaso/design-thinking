@@ -8,6 +8,10 @@ It is meant to answer a simple question:
 
 ## Updates
 
+### 2026-05-08
+
+Stage 06 case study assembly now treats the Markdown case study as the full human-readable source of truth. Instead of selecting or reshaping "important" artifacts, it directly copies every Stage 01-05 artifact section into the final case study with only mechanical heading nesting, then adds summary, transitions, evidence chains, and outcome notes around the copied content. The audit sidecar now checks source-section coverage and content fidelity, while the JSON remains a curated website-content companion rather than the complete artifact archive.
+
 ### 2026-05-06
 
 Found an inconsistency where user journey maps were derived from personas instead of user interviews. The empathize stage is now explicitly interview-led: Stage 02 must define a representative participant sample, recruitment rationale, and neutral open-ended interview questions. Stage 03 now derives every downstream artifact from interviews: each interview becomes an empathy map, users are grouped by shared traits or needs, each group gets a persona, and each persona gets a one-sentence user story plus a journey map.
